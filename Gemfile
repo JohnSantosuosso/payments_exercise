@@ -24,6 +24,7 @@ group :development, :test do
   gem 'pry'
   gem 'bootsnap'
   gem 'simplecov'
+  gem 'shoulda-matchers'
 end
 
 group :development do
