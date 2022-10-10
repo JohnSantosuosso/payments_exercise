@@ -23,6 +23,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry'
   gem 'bootsnap'
+  gem 'simplecov'
 end
 
 group :development do
