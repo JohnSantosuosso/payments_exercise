@@ -255,6 +255,82 @@
           null
         ]
       },
+      "/Users/johnsantosuosso/payments_exercise/payments_exercise/app/controllers/loans_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/payments_exercise/payments_exercise/spec/controllers/payments_controller_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/johnsantosuosso/payments_exercise/payments_exercise/app/controllers/payments_controller.rb": {
         "lines": [
           1,
@@ -307,7 +383,7 @@
           1,
           null,
           1,
-          5,
+          6,
           null,
           null,
           null
@@ -323,8 +399,56 @@
           1,
           null
         ]
+      },
+      "/Users/johnsantosuosso/payments_exercise/payments_exercise/spec/models/loan_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/payments_exercise/payments_exercise/spec/models/payment_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1665461903
+    "timestamp": 1665462060
   }
 }
