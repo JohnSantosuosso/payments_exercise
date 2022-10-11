@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe PaymentsController, type: :controller do
   describe '#index' do
-    loan_2 = Loan.create!(funded_amount: 100.00, remaining_balance: 100.00)
+    loan_2 = Loan.create!(funded_amount: 100.00)
     payment_2 = loan_2.payments.create!(loan_id: loan_2.id, amount: 20.0, date: '2022-10-10')
 
     it 'responds with a 200' do
@@ -12,7 +12,7 @@ RSpec.describe PaymentsController, type: :controller do
   end
 
   describe '#show' do
-    loan_1 = Loan.create!(funded_amount: 100.00, remaining_balance: 100.00)
+    loan_1 = Loan.create!(funded_amount: 100.00)
     payment_1 = loan_1.payments.create!(loan_id: loan_1.id, amount: 20.0, date: '2022-10-10')
 
     it 'responds with a 200' do
@@ -22,7 +22,7 @@ RSpec.describe PaymentsController, type: :controller do
   end
 
   describe '#create' do
-    loan_1 = Loan.create!(funded_amount: 100.00, remaining_balance: 100.00)
+    loan_1 = Loan.create!(funded_amount: 100.00)
 
     it 'responds with a 200' do
       get :create, params: { amount: 10.0, date:'2022-10-10', loan_id: loan_1.id }
