@@ -20,9 +20,9 @@ RSpec.describe PaymentsController, type: :controller do
       expect(response).to have_http_status(:ok)
     end
 
-    context 'if the loan is not found' do
+    context 'if the loan is overpaid' do
       it 'responds with a 404' do
-        get :show, params: { amount: 20.0, date:'2022-10-10', id: payment_1.id, loan_id: loan_1.id }
+        get :show, params: { amount: 120.0, date:'2022-10-10', id: payment_1.id, loan_id: loan_1.id }
         expect(response).to have_http_status(:not_found)
       end
     end
@@ -41,6 +41,7 @@ RSpec.describe PaymentsController, type: :controller do
       it 'responds with a 404' do
         get :show, params: { id: 10000 }
         expect(response).to have_http_status(:not_found)
+        expect(response).to eql('Payment cannot be greater than existing balance')
       end
     end
   end
