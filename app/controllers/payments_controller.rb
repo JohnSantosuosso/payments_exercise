@@ -15,12 +15,12 @@ class PaymentsController < ActionController::API
   end
 
   private
-  def find_loan
-    @loan = Loan.find(params[:loan_id])
-  end
-
   def payment_params
     params.permit(:amount, :date, :loan_id)
+  end
+
+  def find_loan
+    @loan = Loan.find(params[:loan_id])
   end
 
 end
