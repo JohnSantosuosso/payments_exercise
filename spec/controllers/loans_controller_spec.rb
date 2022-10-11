@@ -9,10 +9,13 @@ RSpec.describe LoansController, type: :controller do
   end
 
   describe '#show' do
-    let(:loan) { Loan.create!(funded_amount: 100.0) }
+    loan = Loan.create!(funded_amount: 100.00)
+    payment_1 = loan.payments.create!(loan_id: loan.id, amount: 20.0, date: '2022-10-10')
+    payment_2 = loan.payments.create!(loan_id: loan.id, amount: 20.0, date: '2022-10-10')
 
     it 'responds with a 200' do
       get :show, params: { id: loan.id }
+      require 'pry'; binding.pry 
       expect(response).to have_http_status(:ok)
     end
 
