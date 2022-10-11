@@ -15,7 +15,6 @@ RSpec.describe LoansController, type: :controller do
 
     it 'responds with a 200' do
       get :show, params: { id: loan.id }
-      require 'pry'; binding.pry 
       expect(response).to have_http_status(:ok)
     end
 
