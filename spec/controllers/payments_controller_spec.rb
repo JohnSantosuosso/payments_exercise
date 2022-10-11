@@ -26,6 +26,7 @@ RSpec.describe PaymentsController, type: :controller do
 
     it 'responds with a 200' do
       get :create, params: { amount: 10.0, date:'2022-10-10', id: 1, loan_id: loan_1.id }
+      require 'pry'; binding.pry 
       expect(response).to have_http_status(:ok)
     end
 
@@ -42,6 +43,12 @@ RSpec.describe PaymentsController, type: :controller do
         get :create, params: { amount: 'one dollar', date:'2022-10-10', id: 3, loan_id: loan_1.id }
         expect(response.status).to eql(404)
         expect(response.body).to eql("[\"Amount is not a number\"]")
+      end
+
+      it 'responds with a 404' do
+        get :create, params: { amount: -200.00, date:'2022-10-10', id: 3, loan_id: loan_1.id }
+        expect(response.status).to eql(404)
+        expect(response.body).to eql("[\"Amount must be greater than or equal to 0.01\"]")
       end
     end
   end
