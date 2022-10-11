@@ -33,7 +33,7 @@ class PaymentsController < ActionController::API
 
   def overpaid?
     require 'pry'; binding.pry 
-   if @loan.total_payments + params[:amount] > @loan.amount_funded
+   if @loan.total_payments + params[:amount].to_f > @loan.funded_amount
     return render json: { message: "Payment cannot be greater than existing balance" }
    end
   end
