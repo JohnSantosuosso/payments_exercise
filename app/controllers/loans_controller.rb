@@ -5,6 +5,7 @@ class LoansController < ActionController::API
   end
 
   def index
+    require 'pry'; binding.pry 
     render json: Loan.all
   end
 
