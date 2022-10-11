@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-11T00:18:23-04:00">2022-10-11T00:18:23-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-11T00:28:52-04:00">2022-10-11T00:28:52-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  95.71%
+  97.69%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.21
+         1.19
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>18</b> files in total.
+    <b>22</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>70</b> relevant lines,
-    <span class="green"><b>67</b> lines covered</span> and
+    <b>130</b> relevant lines,
+    <span class="green"><b>127</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed. </span>
     (<span class="green">
-  95.71%
+  97.69%
 </span>
 )
   </div>
@@ -71,6 +71,17 @@
       <tbody>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#a573b41e6c2bf16a291a962ab74766cb27c9c4c6" class="src_link" title="app/controllers/loans_controller.rb">app/controllers/loans_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.14</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#5d987414740b108fe5f1f0a12236a913214d8a35" class="src_link" title="app/controllers/payments_controller.rb">app/controllers/payments_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">90.48 %</td>
             <td class="cell--number">39</td>
@@ -84,11 +95,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#d25c57da80b603f610b3f09b0f20c0f77fd151e3" class="src_link" title="app/models/loan.rb">app/models/loan.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.67</td>
+            <td class="cell--number">2.00</td>
             
           </tr>
         
@@ -268,6 +279,39 @@
             
           </tr>
         
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#193ab1567515dd57f9a4e9fdee680d1f0fdfe8a7" class="src_link" title="spec/controllers/payments_controller_spec.rb">spec/controllers/payments_controller_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">54</td>
+            <td class="cell--number">33</td>
+            <td class="cell--number">33</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#078778d4643d72553dc2b4e3590afea23ee365d0" class="src_link" title="spec/models/loan_spec.rb">spec/models/loan_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">22</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.25</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#d2c177a2624d1f42ac0b7d365ab8bc273cbc0e04" class="src_link" title="spec/models/payment_spec.rb">spec/models/payment_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.56</td>
+            
+          </tr>
+        
       </tbody>
     </table>
   </div>
@@ -284,6 +328,191 @@
       </div>
 
       <div class="source_files">
+      
+        <div class="source_table" id="a573b41e6c2bf16a291a962ab74766cb27c9c4c6">
+  <div class="header">
+    <h3>app/controllers/loans_controller.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class LoansController &lt; ActionController::API</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  rescue_from ActiveRecord::RecordNotFound do |exception|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    render json: &#39;not_found&#39;, status: :not_found</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    render json: Loan.all</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="12">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    render json: Loan.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
       
         <div class="source_table" id="5d987414740b108fe5f1f0a12236a913214d8a35">
   <div class="header">
@@ -759,8 +988,8 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -816,18 +1045,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  validates :remaining_balance, presence: true, numericality: { greater_than_or_equal_to: 0 }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="6">
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -838,7 +1056,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
+          <li class="covered" data-hits="1" data-linenumber="6">
             <span class="hits">1</span>
             
 
@@ -849,8 +1067,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="8">
-            <span class="hits">5</span>
+          <li class="covered" data-hits="6" data-linenumber="7">
+            <span class="hits">6</span>
             
 
             
@@ -860,7 +1078,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -871,7 +1089,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -882,7 +1100,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -3590,6 +3808,1111 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="193ab1567515dd57f9a4e9fdee680d1f0fdfe8a7">
+  <div class="header">
+    <h3>spec/controllers/payments_controller_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>33</b> relevant lines.
+      <span class="green"><b>33</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe PaymentsController, type: :controller do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;#index&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    loan_2 = Loan.create!(funded_amount: 100.00)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    payment_2 = loan_2.payments.create!(loan_id: loan_2.id, amount: 20.0, date: &#39;2022-10-10&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;responds with a 200&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get :index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to have_http_status(:ok)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;#show&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    loan_1 = Loan.create!(funded_amount: 100.00)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    payment_1 = loan_1.payments.create!(loan_id: loan_1.id, amount: 20.0, date: &#39;2022-10-10&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;responds with a 200&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get :show, params: { id: payment_1.id, loan_id: loan_1.id }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to have_http_status(:ok)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;#create&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    loan_1 = Loan.create!(funded_amount: 100.00)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;responds with a 200&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get :create, params: { amount: 10.0, date:&#39;2022-10-10&#39;, loan_id: loan_1.id }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to have_http_status(:ok)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    context &#39;if the loan is overpaid&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;responds with a 404&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get :create, params: { amount: 120.0, date:&#39;2022-10-10&#39;, loan_id: loan_1.id }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(response).to have_http_status(:not_found)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(response.body).to eql(&#39;Payment cannot be greater than existing balance&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    context &#39;if the payment is not properly formatted&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;responds with a 404&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get :create, params: { amount: &#39;one dollar&#39;, date:&#39;2022-10-10&#39;, id: 3, loan_id: loan_1.id }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="43">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(response.status).to eql(404)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(response.body).to eql(&quot;[\&quot;Amount is not a number\&quot;]&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;responds with a 404&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="48">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        get :create, params: { amount: -200.00, date:&#39;2022-10-10&#39;, id: 3, loan_id: loan_1.id }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(response.status).to eql(404)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        expect(response.body).to eql(&quot;[\&quot;Amount must be greater than or equal to 0.01\&quot;]&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="54">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="078778d4643d72553dc2b4e3590afea23ee365d0">
+  <div class="header">
+    <h3>spec/models/loan_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>12</b> relevant lines.
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe Loan, type: :model do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;relationships&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should have_many(:payments) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;validations&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="10">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should validate_presence_of(:funded_amount) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should validate_numericality_of(:funded_amount) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;instance methods&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;finds total payments&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      loan_1 = Loan.create!(funded_amount: 100.00)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      payment_1 = loan_1.payments.create!(loan_id: loan_1.id, amount: 20.0, date: &#39;2022-10-10&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(loan_1.total_payments).to eql(20.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="d2c177a2624d1f42ac0b7d365ab8bc273cbc0e04">
+  <div class="header">
+    <h3>spec/models/payment_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>9</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe Payment, type: :model do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;relationships&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="6">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should belong_to(:loan) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;validations&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="10">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should validate_presence_of(:amount) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should validate_presence_of(:date) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="12">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should validate_numericality_of(:amount) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="13">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    it { should validate_presence_of(:loan_id) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
