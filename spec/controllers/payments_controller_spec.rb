@@ -16,32 +16,32 @@ RSpec.describe PaymentsController, type: :controller do
     payment_1 = loan_1.payments.create!(loan_id: loan_1.id, amount: 20.0, date: '2022-10-10')
 
     it 'responds with a 200' do
-      get :show, params: { amount: 20.0, date:'2022-10-10', id: payment_1.id, loan_id: loan_1.id }
+      get :show, params: { id: payment_1.id, loan_id: loan_1.id }
       expect(response).to have_http_status(:ok)
-    end
-
-    context 'if the loan is overpaid' do
-      it 'responds with a 404' do
-        get :show, params: { amount: 120.0, date:'2022-10-10', id: payment_1.id, loan_id: loan_1.id }
-        expect(response).to have_http_status(:not_found)
-      end
     end
   end
 
   describe '#create' do
     loan_1 = Loan.create!(funded_amount: 100.00, remaining_balance: 100.00)
-    payment_1 = loan_1.payments.create!(loan_id: loan_1.id, amount: 20.0, date: '2022-10-10')
 
     it 'responds with a 200' do
-      get :show, params: { amount: 120.0, date:'2022-10-10' }
+      get :create, params: { amount: 10.0, date:'2022-10-10', id: 1, loan_id: loan_1.id }
       expect(response).to have_http_status(:ok)
     end
 
-    context 'if the loan is not found' do
+    context 'if the loan is overpaid' do
       it 'responds with a 404' do
-        get :show, params: { id: 10000 }
+        get :show, params: { amount: 120.0, date:'2022-10-10', id: 2, loan_id: loan_1.id }
         expect(response).to have_http_status(:not_found)
-        expect(response).to eql('Payment cannot be greater than existing balance')
+        expect(response.body).to eql('Payment cannot be greater than existing balance')
+      end
+    end
+
+    context 'if the payment is not properly formatted' do
+      it 'responds with a 404' do
+        get :create, params: { amount: 'one dollar', date:'2022-10-10', id: 3, loan_id: loan_1.id }
+        expect(response.status).to eql(404)
+        expect(response.body).to eql("[\"Amount is not a number\"]")
       end
     end
   end

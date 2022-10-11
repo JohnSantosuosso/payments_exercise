@@ -1,5 +1,5 @@
 class PaymentsController < ActionController::API
-  before_action :find_loan, :overpaid?
+  before_action :find_loan, :overpaid?, except: [:index]
 
   rescue_from ActiveRecord::RecordNotFound do |exception|
     render json: 'not_found', status: :not_found
@@ -14,7 +14,7 @@ class PaymentsController < ActionController::API
     if payment.save
         render json: Payment.find(payment.id)
     else
-      render json: payment.errors.full_messages
+      render json: payment.errors.full_messages, status: :not_found
     end
   end
 
@@ -32,7 +32,6 @@ class PaymentsController < ActionController::API
   end
 
   def overpaid?
-    require 'pry'; binding.pry 
    if @loan.total_payments + params[:amount].to_f > @loan.funded_amount
     return render json: 'Payment cannot be greater than existing balance', status: :not_found
    end
