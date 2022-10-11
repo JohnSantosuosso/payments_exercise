@@ -25,14 +25,13 @@ RSpec.describe PaymentsController, type: :controller do
     loan_1 = Loan.create!(funded_amount: 100.00, remaining_balance: 100.00)
 
     it 'responds with a 200' do
-      get :create, params: { amount: 10.0, date:'2022-10-10', id: 1, loan_id: loan_1.id }
-      require 'pry'; binding.pry 
+      get :create, params: { amount: 10.0, date:'2022-10-10', loan_id: loan_1.id }
       expect(response).to have_http_status(:ok)
     end
 
     context 'if the loan is overpaid' do
       it 'responds with a 404' do
-        get :show, params: { amount: 120.0, date:'2022-10-10', id: 2, loan_id: loan_1.id }
+        get :create, params: { amount: 120.0, date:'2022-10-10', loan_id: loan_1.id }
         expect(response).to have_http_status(:not_found)
         expect(response.body).to eql('Payment cannot be greater than existing balance')
       end
