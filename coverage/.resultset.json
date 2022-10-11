@@ -282,11 +282,21 @@
           2,
           null,
           null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
           null
         ]
       },
       "/Users/johnsantosuosso/payments_exercise/payments_exercise/app/models/loan.rb": {
         "lines": [
+          1,
+          1,
+          null,
           1,
           1,
           null
@@ -307,6 +317,7 @@
           2,
           2,
           2,
+          null,
           null,
           1,
           1,
@@ -329,6 +340,6 @@
         ]
       }
     },
-    "timestamp": 1665447630
+    "timestamp": 1665448737
   }
 }
