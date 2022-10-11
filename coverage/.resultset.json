@@ -274,7 +274,22 @@
       },
       "/Users/johnsantosuosso/payments_exercise/payments_exercise/spec/models/loan_spec.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/johnsantosuosso/payments_exercise/payments_exercise/app/models/loan.rb": {
+        "lines": [
+          1,
+          1,
+          null
         ]
       },
       "/Users/johnsantosuosso/payments_exercise/payments_exercise/spec/models/payment_spec.rb": {
@@ -296,15 +311,8 @@
           1,
           null
         ]
-      },
-      "/Users/johnsantosuosso/payments_exercise/payments_exercise/app/models/loan.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1665446416
+    "timestamp": 1665446494
   }
 }
